@@ -43,7 +43,7 @@ function Form() {
         setStatus(true)
         setStatusMessage("Form submitted successfully")
         setTimeout(() => {
-            router.push('/calender');
+            router.push('/book');
           }, 500);
       } else {
         setIsloading(false)
