@@ -7,25 +7,25 @@ body {
 }
 
 .hero-banner{
-  background-image: url("/Assets/bbg.jpg");
+  background-image: url("/assets/bbg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .hero-image{
-  background-image: url("/Assets/hero-image2.png");
+  background-image: url("/assets/hero-image2.png");
   background-size: cover;
   background-position: top;
 }
 
 .compare{
-  background-image: url("/Assets/bbg.jpg");
+  background-image: url("/assets/bbg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .contact{
-  background-image: url("/Assets/bbg.jpg");
+  background-image: url("/assets/bbg.jpg");
   background-size: cover;
   background-position: center;
 }
