@@ -16,7 +16,7 @@ const projectsData = [
       "Elevated Google My Business profile from 12th to 5th spot.",
       "Resulted in a 3x increase in bookings for Moe Garage Door."
     ],
-    testimonial: "Karim built me a great website that really helped my garage door business. It boosted my local search rankings a lot. If you're in the garage door business, I highly recommend Star Contractor Web Agency."
+    testimonial: "Karim did an amazing job building my garage door business website. It made a big difference in how well I show up in local searches. If you're in the garage door business, I can't recommend Star Contractor Web Agency enough."
 
   },
   {

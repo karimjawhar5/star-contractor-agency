@@ -7,10 +7,10 @@ const Project = ({ company, client, image, services, testimonial}) => {
       <img src={image} alt={company} className="w-full ml-6 md:w-1/2 h-fit" />
 
       <div className='w-full md:w-1/2'>
-        <h2 className="text-rem-lg xl:text-rem-xl font-semibold mt-2">{company}</h2>
-        <p className="text-gray-600 mt-2 text-rem-base xl:text-rem-lg">{client}</p>
+        <h2 className="text-rem-lg xl:text-rem-2.75xl font-semibold mt-2">{company}</h2>
+        <p className="text-orange-600 mt-2 text-rem-base xl:text-rem-lg">{client}</p>
 
-        <ul className='text-gray-600 text-rem-sm pl-5 lg:text-rem-base mt-6 space-y-3 md:space-y-2 xl:space-y-4 list-decimal'>
+        <ul className='paragraph-font font-light text-gray-700 text-rem-base pl-5 lg:text-rem-lg mt-6 space-y-3 md:space-y-2 xl:space-y-3 list-decimal'>
           {services?.map((service) => <li>{service}</li>)}
         </ul>
 
@@ -20,7 +20,7 @@ const Project = ({ company, client, image, services, testimonial}) => {
           <Image src="/assets/project1/stats3.svg" width={165} height={90} className='w-1/3'></Image>
         </div>
         <div className='review shadow-sm rounded-sm bg-gray-50 p-4 w-full mt-6'>
-          <p className='font-normal text-gray-600 text-rem-sm lg:text-rem-base'>{testimonial}</p>
+          <p className='font-light paragraph-font text-gray-700 text-rem-base'>{testimonial}</p>
           
           <div className='flex mt-4'>
             <p className='w-1/2 font-medium text-rem-sm lg:text-rem-base'>{client}</p>

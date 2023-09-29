@@ -11,7 +11,7 @@ const Book = () => {
       <main>
         <div className=" flex flex-col h-screen w-screen bg-black">
           <div className="w-full md:flex items-center mx-auto max-w-7xl py-8 px-4 text-center bg-black text-white">
-            <div className=" w-full md:w-1/3 justify-start hidden md:block">
+            <div className=" w-full md:w-1/3  justify-start hidden md:block">
               <Image
                 src="/assets/wlogo.svg"
                 alt="white-logo"

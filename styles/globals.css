@@ -29,3 +29,13 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.header-font {
+  font-family: 'Montserrat', sans-serif;
+  /* Add any other styles you need for headers */
+}
+
+.paragraph-font {
+  font-family: 'Roboto', sans-serif; /* Use Roboto for paragraphs */
+  /* Add any other styles you need for paragraphs */
+}
