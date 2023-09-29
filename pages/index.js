@@ -1,118 +1,302 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import Link from "next/link";
+import Form from "@/components/Form";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ['latin'] })
+import Portfolio from "@/components/Portfolio";
+
+const portfolioData = [
+  {
+    title: "Project 1",
+    description: "Description for Project 1",
+    image: "/assets/bigger/portfolio1.jpg",
+  },
+  {
+    title: "Project 2",
+    description: "Description for Project 2",
+    image: "/assets/bigger/portfolio2.jpg",
+  },
+  {
+    title: "Project 3",
+    description: "Description for Project 3",
+    image: "/assets/bigger/portfolio3.jpg",
+  },
+  // Add more portfolio pieces here
+];
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main>
+      <Head>
+        <title>Star Contractor Web Agency - We Build Websites that Home-Owners Trust</title>
+      </Head>
+      <div className="flex flex-col hero-banner h-screen max-w-md mx-auto md:max-w-full">
+        <div className="hero-header w-full mx-auto pt-6 px-6 lg:max-w-7xl">
+          <Image
+            src="/assets/wlogo.svg"
+            alt="white-logo"
+            width={165}
+            height={80}
+            className="w-36 md:w-44 lg:w-48"
+          />
+        </div>
+
+        <div className="hero-content w-full mt-12 px-6 text-center mx-auto md:max-w-3xl">
+          <header>
+            <h1 className="text-white font-semibold text-rem-3xl md:text-rem-4xl">
+              We Build Websites For Contractors That Home-owners Trust
+            </h1>
+          </header>
+
+          <p className="text-white font-normal text-rem-base mt-6 md:text-rem-lg">
+            Affordable & trustworthy websites, that rank your business above
+            competitors, and convert leads to clients.
+          </p>
+
+          <div
+            className="cta-button w-full py-3 rounded-sm mx-auto mt-10 bg-orange-600"
+            onClick={() => (window.location.href = "#book-call")}
+            style={{ cursor: "pointer" }}
           >
-            By{' '}
+            <h3 className="text-white w-full font-semibold text-rem-base md:text-rem-lg">
+              Book A Free Call
+            </h3>
+            <p className="text-white w-full font-light text-rem-xs md:text-rem-sm">
+              Get a free quote (no obligations)
+            </p>
+          </div>
+        </div>
+
+        <div className="hero-image w-full flex-grow mt-20  mx-auto"></div>
+      </div>
+
+      <div className="services w-screen py-28 lg:py-32 px-6 max-w-md mx-auto md:max-w-full">
+        <div className="titles w-full text-center max-w-xl mx-auto">
+          <h2 className="font-semibold text-rem-2xl md:text-rem-2.5xl">We ensure your website is a valuable asset that attracts clients and delivers ROI.</h2>
+        </div>
+
+        <ul className="blocks w-full mx-auto mt-12 space-y-4 md:flex md:space-x-4 md:space-y-0 md:max-w-6xl">
+        <li className="single-block bg-gray-100 shadow-sm p-6">
+          <Image src="/assets/idea.png" alt="Idea Icon" width={50} height={50} className="md:w-16 lg:w-auto"/>
+            <h3 className="text-black font-semibold text-rem-md mt-4 md:text-rem-sm lg:text-rem-lg">
+              Branding, Content, and Images
+            </h3>
+            <p className="text-black font-light mt-4 text-rem-sm md:text-rem-xs lg:text-rem-sm">
+              We work closely with your business, to write accurate SEO friendly
+              content, we source image for your website, and we create a
+              complete branding design if nessacary (Logos, Business cards,
+              Graphics, etc.)
+            </p>
+          </li>
+
+          <li className="single-block bg-gray-100 shadow-sm p-6">
+          <Image src="/assets/success.png" alt="success Icon" width={50} height={50} className="md:w-16 lg:w-auto"/>
+            <h3 className="text-black font-semibold text-rem-md mt-4 md:text-rem-sm lg:text-rem-lg">
+              Branding, Content, and Images
+            </h3>
+            <p className="text-black font-light mt-4 text-rem-sm md:text-rem-xs lg:text-rem-sm">
+              We work closely with your business, to write accurate SEO friendly
+              content, we source image for your website, and we create a
+              complete branding design if nessacary (Logos, Business cards,
+              Graphics, etc.)
+            </p>
+          </li>
+
+          <li className="single-block bg-gray-100 shadow-sm p-6">
+          <Image src="/assets/trust.png" alt="trust Icon" width={50} height={50} className="md:w-16 lg:w-auto"/>
+            <h3 className="text-black font-semibold text-rem-md mt-4 md:text-rem-sm lg:text-rem-lg">
+              Branding, Content, and Images
+            </h3>
+            <p className="text-black font-light mt-4 text-rem-sm md:text-rem-xs lg:text-rem-sm">
+              We work closely with your business, to write accurate SEO friendly
+              content, we source image for your website, and we create a
+              complete branding design if nessacary (Logos, Business cards,
+              Graphics, etc.)
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className="compare w-screen py-28 lg:py-32 px-6 max-w-md mx-auto md:max-w-full">
+        <div className="compare-content w-full mx-auto space-y-8 md:max-w-6xl md:flex md:space-y-0 md:space-x-10">
+          <div className="left-content md:w-1/2">
+            <h2 className="text-orange-600 font-semibold text-rem-xl lg:text-rem-2xl">
+              Does This Sound Like You?
+            </h2>
+            <ul className="space-y-4 lg:space-y-6 mt-6 text-white text-rem-sm lg:text-rem-base list-disc">
+              <li>Frustrated with your website not delivering any results?</li>
+              <li>
+                Do you have a poorly built website with slow load speed, and
+                high click off rates?
+              </li>
+              <li>Are you still waiting for “SEO” to kick in?</li>
+              <li>
+                Have you spent thousands on an agency and seen no positive
+                outcomes?
+              </li>
+              <li>
+                Do you need a reliable source to create a good website but
+                aren't sure who to trust?
+              </li>
+            </ul>
+          </div>
+
+          <div className="right-content md:w-1/2">
+            <h2 className="text-orange-600 font-semibold text-rem-xl lg:text-rem-2xl">
+              We Can Help!
+            </h2>
+            <ul className="space-y-4 lg:space-y-6 mt-6 text-white text-rem-sm lg:text-rem-base list-disc">
+              <li>
+                We don’t sell empty promises, our websites are proven to perform
+                from day 1
+              </li>
+              <li>
+                We've got real experience with contractors and a track record of
+                real results.
+              </li>
+              <li>
+                Our work is consistently top-notch. We build trust worthy
+                websites that prioritizes conversion rate.
+              </li>
+              <li>
+                Our rates are budget-friendly, we value your return on
+                investment.
+              </li>
+              <li>
+                Our websites are a one time payment with unlimited revisions, No
+                shady contracts or unnecessary future payments.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          className="cta-button w-full py-3 rounded-sm mx-auto mt-16 bg-orange-600 text-center lg:hidden"
+          onClick={() => (window.location.href = "#book-call")}
+          style={{ cursor: "pointer" }}
+        >
+          <h3 className="text-white w-full font-semibold text-md">
+            Book A Free Call
+          </h3>
+          <p className="text-white w-full font-normal text-xs">
+            Get a free quote (no obligations)
+          </p>
+        </div>
+
+        <div className="compare-footer w-full mt-16 hidden lg:flex lg:items-center lg:max-w-7xl mx-auto">
+          <div
+            className="cta-button w-3/5 py-2 items-center text-center rounded-sm mx-auto bg-orange-600"
+            onClick={() => (window.location.href = "#book-call")}
+            style={{ cursor: "pointer" }}
+          >
+            <h3 className="text-white w-full font-bold text-lg">
+              Book A Free Call
+            </h3>
+            <p className="text-white w-full font-normal text-xs">
+              Discover what we offer, and get a free quote (no obligations)
+            </p>
+          </div>
+          <div className="logo text-end">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/assets/wlogo.svg"
+              alt="white-logo"
+              width={165}
+              height={80}
             />
-          </a>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="portfolio w-screen py-28 lg:py-32 px-6 max-w-md mx-auto md:max-w-full">
+          <div className="container mx-auto">
+            <Portfolio />
+          </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className="contact w-screen py-16 lg:py-12 px-6 max-w-md mx-auto md:max-w-full" id="book-call">
+        <div className="contact-inner space-y-10 md:flex md:space-y-0 md:items-center md:max-w-5xl mx-auto">
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="left-content flex-col space-y-8 justify-center hidden md:block">
+            <h2 className="text-white font-bold text-rem-3xl md:text-rem-2xl lg:text-rem-3xl">
+              Are you ready to give your business a powerful online presence?
+            </h2>
+            <ul className="space-y-4 text-white text-rem-lg">
+              <li>✅ {"\u00A0"}Gain the trust of Clients</li>
+              <li>✅ {"\u00A0"}Generate more leads</li>
+              <li>✅ {"\u00A0"}Land more clients</li>
+            </ul>
+            <div className="flex space-x-4">
+              <Link
+                href="tel:14379616674"
+                className="text-orange-600 font-medium text-rem-lg md:text-rem-md lg:text-rem-lg"
+              >
+                +1 (437) 961-6674
+              </Link>
+              <Link
+                href="mailto:starcontractoragency@gmail.com"
+                className="text-orange-600 font-medium text-rem-lg md:text-rem-md lg:text-rem-lg"
+              >
+                Email Us
+              </Link>
+              <Link
+                href="https://www.facebook.com/profile.php?id=61550949255712"
+                className="text-orange-600 font-medium text-rem-lg md:text-rem-md lg:text-rem-lg"
+              >
+                Facebook
+              </Link>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+          <div className="right-content">
+          <h2 className="text-white font-bold text-rem-2xl md:hidden">
+              Are you ready to give your business a powerful online presence?
+            </h2>
+            <div className="contact-form flex flex-col text-center bg-white px-6 py-10 mt-10 md:mt-0 lg:px-12">
+              <h3 className="font-semibold text-back text-rem-lg lg:text-rem-xl">
+                Book A Free Call
+              </h3>
+              <p className="font-normal text-black mt-3 text-rem-sm lg:text-rem-base">
+                Tell us about your business and discover what we offer, and get
+                a free quote with no obligations,{" "}
+              </p>
+              <Form />
+              <p className="text-black font-light mt-8 text-rem-xs">
+                By proceeding, you agree to share your information with Star
+                Contractor Web Agency and allow us to contact you
+              </p>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="left-content flex-col space-y-8 justify-center md:hidden">
+            <ul className="space-y-4 text-white text-rem-base mt-12">
+              <li>✅ {"\u00A0"}Gain the trust of Clients</li>
+              <li>✅ {"\u00A0"}Generate more leads</li>
+              <li>✅ {"\u00A0"}Land more clients</li>
+            </ul>
+            <div className="flex space-x-4">
+              <Link
+                href="tel:14379616674"
+                className="text-orange-600 font-medium text-rem-md"
+              >
+                +1 (437) 961-6674
+              </Link>
+              <Link
+                href="mailto:starcontractoragency@gmail.com"
+                className="text-orange-600 font-medium text-rem-md"
+              >
+                Email Us
+              </Link>
+              <Link
+                href="https://www.facebook.com/profile.php?id=61550949255712"
+                className="text-orange-600 font-medium text-rem-md"
+              >
+                Facebook
+              </Link>
+            </div>
+          </div>
+
+        </div>
       </div>
     </main>
-  )
+  );
 }
