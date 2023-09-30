@@ -55,7 +55,7 @@ export default function Home() {
 
           <p className="text-white font-light text-rem-lg mt-6 lg:text-rem-xl mx-auto">
             We specialize in creating websites that drive trust and boost
-            conversions for contractors (Garage door, Roofing, Realestate, etc.)
+            conversions for contractors
           </p>
 
           <div
