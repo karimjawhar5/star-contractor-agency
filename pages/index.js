@@ -10,15 +10,15 @@ export default function Home() {
     <main>
       <Head>
         <title>
-          Star Contractor Web Agency - Trusted Websites for Contractors
+          Star Contractor Web Agency | Websites for Toronto Contractors
         </title>
         <meta
           name="description"
-          content="Elevate your contracting business with professional website design and branding. We specialize in creating trustworthy online presences for roofing companies, garage door services, and more. Serving Etobicoke, Ontario, and clients across Ontario, Canada and worldwide."
+          content="Star Contractor Web Agency is Ontario's #1 Website Design and Branding Agency focused on websites, logos, & digital marketing solutions for contractors in Toronto and Surrounding Areas."
         />
         <meta
           name="keywords"
-          content="Contractor website design, roofing company websites, garage door service web development, Etobicoke web agency, Canada-wide web design, branding for contractors"
+          content="Website Designer, Contractor Website Designer, Website Agency Toronto, Contractor Website Agency, Website Agency For Contractors, Toronto Website agency, Roofing Business Website, Garage Door Website Agency"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="language" content="English" />
@@ -27,7 +27,7 @@ export default function Home() {
         <meta property="og:title" content="Trusted Contractor Website Design" />
         <meta
           property="og:description"
-          content="Boost your contracting business with professional website design and branding services from Star Contractor Web Agency. Serving contractors in Etobicoke, Ontario, and across Canada."
+          content="Boost your contracting business with professional website design and branding services from Star Contractor Web Agency. Serving contractors and service businesses in Toronto, Ontario, and across Canada."
         />
         <meta property="og:image" content="/assets/banner.jpg" />
         <meta
