@@ -1,0 +1,70 @@
+/* BlogContentFormatter.module.css */
+
+/* Base styles for headings */
+.container h2 {
+  font-size: 2.25rem; /* Equivalent to 2xl in Tailwind */
+  color: #000; /* Black */
+  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  padding-top: 1rem; /* Add padding to the top */
+  padding-bottom: 0.8rem; /* Add padding to the top */
+}
+
+.container h3 {
+  font-size: 1.75rem; /* Equivalent to xl in Tailwind */
+  color: #000; /* Black */
+  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  padding-top: 0.8rem; /* Add padding to the top */
+  padding-bottom: 0.4rem; /* Add padding to the top */
+}
+
+.container h4 {
+  font-size: 1.25rem; /* Equivalent to lg in Tailwind */
+  color: #000; /* Black */
+  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  padding-top: 0.6rem; /* Add padding to the top */
+  padding-bottom: 0.3rem; /* Add padding to the top */
+}
+
+/* Responsive styles for smaller screens (phones) */
+@media screen and (max-width: 640px) {
+  .container h2 {
+    font-size: 1.75rem; /* Equivalent to xl in Tailwind */
+  }
+
+  .container h3 {
+    font-size: 1.50rem; /* Equivalent to lg in Tailwind */
+  }
+
+  .container h4 {
+    font-size: 1.25rem; /* Equivalent to base in Tailwind */
+  }
+}
+
+.container p {
+  font-size: 1rem; /* Equivalent to base in Tailwind */
+  color: #374151; /* Equivalent to text-gray-800 in Tailwind */
+  padding-bottom: 0.40rem;
+}
+
+.container img {
+  width: 100%; /* Full width */
+  border-radius: 0.25rem; /* Equivalent to rounded-sm in Tailwind */
+  padding-bottom: 0.40rem;
+}
+
+.container ul {
+  font-size: 1rem; /* Equivalent to base in Tailwind */
+  color: #374151; /* Equivalent to text-gray-800 in Tailwind */
+  padding-bottom: 0.40rem;
+}
+
+.container a {
+  color: #f87315; /* Set the text color to orange */
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.2s ease; /* Smooth transition for underline */
+  font-size: 1rem; /* Same as p tags */
+}
+
+.container a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,300;1,9..40,500;1,9..40,700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-body {
-  background-color: white;
+.body-font {
+  font-family: 'Poppins', sans-serif;
 }
 
-.hero-banner{
-  background-image: url("/assets/background/bbg.jpg");
+.banner-background{
+  background-image: url("/assets/background/default-background.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.hero-image{
-  background-image: url("/assets/hero-image2.png");
-  background-size: cover;
-  background-position: top;
-}
-
-.compare{
-  background-image: url("/assets/bbg.jpg");
+.cta-background{
+  background-image: url("/assets/background/service-background.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.contact{
-  background-image: url("/assets/bbg.jpg");
-  background-size: cover;
-  background-position: center;
+.ImageShadowDesktopLeftBottom {
+  /* Default styles for all viewports */
+
+  @media (min-width: 1024px) {
+    /* Styles for viewports larger than 768px */
+    box-shadow: -20px 20px rgb(253, 186, 116);
+  }
 }
+
+.ImageShadowDesktopRightBottom {
+  /* Default styles for all viewports */
+
+  @media (min-width: 1024px) {
+    /* Styles for viewports larger than 768px */
+    box-shadow: 20px 20px rgb(253, 186, 116);
+  }
+}
+
+.slantedSection {
+  background: linear-gradient(-10deg,#f87315 40%, rgb(249, 250, 251) 30%); /* Set linear gradient background */
+  height:auto;
+}
+
+.sidewaysSection {
+  @media (min-width: 1024px) {
+  background: linear-gradient(-70deg,#f87315 30%, rgb(249, 250, 251) 20%); /* Set linear gradient background */
+  height:auto;
+  }
+}
+
+
