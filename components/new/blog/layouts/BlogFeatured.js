@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from "@/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import BlogThumbnail from '../elements/BlogThumbNail';
+import BlogThumbnail from '../elements/BlogThumbnail';
 import ButtonFilled from '../../general/elements/ButtonFilled';
 
 function BlogFeatured({background="white"}) {
