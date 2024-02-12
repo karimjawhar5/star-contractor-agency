@@ -1,6 +1,7 @@
 import BlogPageDisplay from '@/components/blog/layouts/BlogPageDisplay'
 import PageBanner from '@/components/banner/layouts/PageBanner'
 import React from 'react'
+import Head from 'next/head'
 
 function BlogPage() {
   return (
@@ -18,7 +19,7 @@ function BlogPage() {
           <meta name="twitter:creator" content="@StarContractorAgency" />
       </Head>
 
-      <PageBanner background="/assets/background/bbg.jpg" heading="Blogs & Resources" subHeading="Star Contractor Web Agency is a dynamic agency focused on local service based business, providing them with a powerful online presence through websites, digital media, branding, and SEO services."/>
+      <PageBanner background="/assets/background/bbg.jpg" heading="Blogs & Resources" subHeading="From tips on website design and SEO strategies to branding advice and digital marketing insights, we provide businesses with the knowledge and tools they need to succeed online. Explore our free resources and empower your business today."/>
       <BlogPageDisplay />
     </div>
   )
