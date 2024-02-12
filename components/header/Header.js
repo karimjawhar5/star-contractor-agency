@@ -40,7 +40,7 @@ function Header() {
                 <a href="/about" className=' h-6 items-center px-3 text-slate-100 hover:text-orange-500'>About Us</a>
               </li>
               <li>
-                <a onClick={handleServicesToggle} className='px-3 text-slate-100 hover:text-orange-500 h-6 flex items-center cursor-pointer'><span>Services</span> {servicesToggled? <MdArrowDropUp size={30}/> : <MdArrowDropDown size={30}/>}</a>
+                <p onClick={handleServicesToggle} className='px-3 text-slate-100 hover:text-orange-500 h-6 flex items-center cursor-pointer'><span>Services</span> {servicesToggled? <MdArrowDropUp size={30}/> : <MdArrowDropDown size={30}/>}</p>
               </li>
               <li>
                 <a href="/our-work" className=' h-6 items-center px-3 text-slate-100 hover:text-orange-500'>Our Work</a>

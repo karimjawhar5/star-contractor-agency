@@ -17,7 +17,7 @@ function ServicesCard({image, title, text, link}) {
         <div className='p-6'>
             <h4 className='text-base lg:text-lg font-medium text-gray-800 mb-2 body-font'>{title}</h4>
             <p className=' text-gray-700 text-sm font-light mb-4'>{text}</p>
-            <LinkTo text="Learn More" link={link}/>
+            <LinkTo text={`Explore ${title}`} link={link}/>
         </div>
       
     </div>
