@@ -13,7 +13,7 @@ function Hero() {
                 <div className='text-center lg:text-left lg:w-1/2'>
                     <h1 className='text-4xl xl:text-5xl 2xl:text-6xl mb-6 lg:mb-0 font-medium text-white md:leading-normal'><span className='underline decoration-orange-500'>Toronto Website Design & SEO Agency</span> For Service Businesses.</h1>
                     <p className="block lg:hidden text-gray-200 mb-10 font-light leading-relaxed"> 
-                    Solving visibility and ranking concerns for service businesses in the Greater Toronto Area, with a genuine and effective approach to web design, SEO strategies, branding, and digital media.
+                    Solving visibility and ranking concerns for service businesses in the Greater Toronto Area, with a personalized & effective approach to web design, SEO, branding, and digital media.
                     </p>
                     <div className='block lg:hidden'>
                         <ButtonFilled link="/work" text="Start A Project" icon={<MdArrowForward size={18}/>}/>

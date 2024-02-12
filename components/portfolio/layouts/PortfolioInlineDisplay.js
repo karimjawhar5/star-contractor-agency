@@ -31,7 +31,7 @@ function PortfolioInlineDisplay() {
                 We build websites correctly the first time, with a personal approach, focused on ranking and visibility.
                 </p>
                 <div className='hidden lg:block'>
-                  <ButtonFilled link="/work" text="Let's Work Together" icon={<MdArrowForward size={18}/>}/>
+                  <ButtonFilled link="/contact-us" text="Let's Work Together" icon={<MdArrowForward size={18}/>}/>
                 </div>
             </div>
 

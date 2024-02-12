@@ -1,17 +1,30 @@
 import React from 'react'
-import PageBanner from '@/components/new/banner/layouts/PageBanner'
-import ContentLeftImageRight from '@/components/new/general/layouts/ContentLeftImageRight'
-import ContentRightImageLeft from '@/components/new/general/layouts/ContentRightImageLeft'
-import CTA from '@/components/new/banner/layouts/CTA'
-import BlogCardDisplay from '@/components/new/blog/layouts/BlogCardsDisplay'
+import PageBanner from '@/components/banner/layouts/PageBanner'
+import ContentLeftImageRight from '@/components/general/layouts/ContentLeftImageRight'
+import ContentRightImageLeft from '@/components/general/layouts/ContentRightImageLeft'
+import CTA from '@/components/banner/layouts/CTA'
+import BlogCardDisplay from '@/components/blog/layouts/BlogCardsDisplay'
+import Head from 'next/head'
 
 
 function AboutPage() {
   return (
     <div className='h-full'>
-      <PageBanner background="/assets/background/bbg.jpg" heading="About Our Agency" subHeading="Star Contractor Web Agency is a dynamic agency focused on local service based business, providing them with a powerful online presence through websites, digital media, branding, and SEO services."/>
+      <Head>
+          <title>About Star Contractor Web Agency | Web Design & SEO Services Toronto</title>
+          <meta name="description" content="Learn about Star Contractor Web Agency, a Canadian website agency in Etobicoke, Ontario, providing websites, digital media, branding, and SEO services to local businesses in the Greater Toronto and Hamilton Area." />
+          <meta name="keywords" content="website agency, digital media, branding, SEO services, local businesses, Greater Toronto Area, Hamilton Area, Etobicoke, Ontario, Canada" />
+          <meta name="author" content="Karim Jaouhar" />
+          <meta property="og:title" content="About Star Contractor Web Agency | Web Design & SEO Services Toronto" />
+          <meta property="og:description" content="Learn about Star Contractor Web Agency, a Canadian website agency in Etobicoke, Ontario, providing websites, digital media, branding, and SEO services to local businesses in the Greater Toronto and Hamilton Area." />
+          <meta property="og:image" content="/og.jpg" />
+          <meta property="og:url" content="https://www.starcontractoragency.com/about" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@KarimJawhar02" />
+      </Head>
+      <PageBanner background="/assets/background/bbg.jpg" heading="About Our Agency" subHeading="Star Contractor Web Agency is a Canadian website agency based in Etobicoke, Onatrio focused on providing websites, digital media, branding, and SEO services to local Canadian businesses in the Greater Toronto and Hamilton Area."/>
 
-<ContentRightImageLeft 
+        <ContentRightImageLeft 
             image={"/assets/images/about/about1.jpg"} 
             title="What is Star Contractor Web Agency?"  
             paragraph="Star Contractor Web Agency is a dedicated team of professionals based in Etobicoke, Ontario, specializing in crafting powerful and authentic online presences for local businesses in the Greater Toronto and Hamilton areas. With over five years of experience, we offer comprehensive services in web design, SEO strategies, branding, and digital media solutions. Our mission is to help businesses thrive in the digital landscape by providing tailored services that prioritize consistency and authenticity."

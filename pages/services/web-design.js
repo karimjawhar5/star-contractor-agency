@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from '@/components/new/banner/layouts/PageBanner'
-import ContentLeftImageRight from '@/components/new/general/layouts/ContentLeftImageRight'
-import ContentRightImageLeft from '@/components/new/general/layouts/ContentRightImageLeft'
-import Process from '@/components/new/general/layouts/Process'
-import CTA from '@/components/new/banner/layouts/CTA'
-import PortfolioDisplaySection from '@/components/new/portfolio/layouts/PortfolioDisplaySection'
+import PageBanner from '@/components/banner/layouts/PageBanner'
+import ContentRightImageLeft from '@/components/general/layouts/ContentRightImageLeft'
+import Process from '@/components/general/layouts/Process'
+import CTA from '@/components/banner/layouts/CTA'
+import PortfolioDisplaySection from '@/components/portfolio/layouts/PortfolioDisplaySection'
+import Head from 'next/head'
 
 import { MdHandshake, MdManageSearch, MdDevices,MdOutlineRocketLaunch } from "react-icons/md";
 
@@ -36,7 +36,20 @@ function WebDesignPage() {
 
   return (
     <div>
-        <PageBanner background="/assets/background/bbg.jpg" heading="Website Design & Development" subHeading="We build professional websites with an SEO first approach, aimed at attracting customers and displaying your business accuratly online."/>
+              <Head>
+            <title>Expert Website Design Services | Star Contractor Agency</title>
+            <meta name="description" content="Need a website that attracts customers? Our expert team crafts stunning and user-friendly websites tailored for businesses in Toronto and the Greater Toronto Area. Let us help you stand out online and grow your business." />
+            <meta name="keywords" content="website design, web design services, expert website design, Toronto website design, website development, website designers, Greater Toronto Area, website design agency" />
+            <meta name="author" content="Star Contractor Agency" />
+            <meta property="og:title" content="Expert Website Design Services | Star Contractor Agency" />
+            <meta property="og:description" content="Need a website that attracts customers? Our expert team crafts stunning and user-friendly websites tailored for businesses in Toronto and the Greater Toronto Area. Let us help you stand out online and grow your business." />
+            <meta property="og:image" content="/og.jpg" />
+            <meta property="og:url" content="https://www.starcontractoragency.com/services/web-design" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:creator" content="@StarContractorAgency" />
+        </Head>
+
+        <PageBanner background="/assets/background/bbg.jpg" heading="Website Design & Development" subHeading="Need a website that attracts customers? Our expert team crafts stunning and user-friendly websites tailored for businesses in Toronto and the Greater Toronto Area. Let us help you stand out online and grow your business."/>
         <ContentRightImageLeft 
             image={"/assets/images/services/web-design/main.jpg"} 
             title="Website Development"  
@@ -47,8 +60,8 @@ function WebDesignPage() {
               "Mobile Optimization",
               "Ongoing Support"
           ]} 
-            link="https://www.example.com/"
-            linkText = "SEO Service"
+            link="/conatact-us"
+            linkText = "Request A Website"
             background = "gray"
         />
         <Process steps={steps} />

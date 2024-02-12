@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from '@/components/new/banner/layouts/PageBanner'
-import ContentLeftImageRight from '@/components/new/general/layouts/ContentLeftImageRight'
-import ContentRightImageLeft from '@/components/new/general/layouts/ContentRightImageLeft'
-import Process from '@/components/new/general/layouts/Process'
-import CTA from '@/components/new/banner/layouts/CTA'
-import PortfolioDisplaySection from '@/components/new/portfolio/layouts/PortfolioDisplaySection'
+import PageBanner from '@/components/banner/layouts/PageBanner'
+import ContentRightImageLeft from '@/components/general/layouts/ContentRightImageLeft'
+import Process from '@/components/general/layouts/Process'
+import CTA from '@/components/banner/layouts/CTA'
+import PortfolioDisplaySection from '@/components/portfolio/layouts/PortfolioDisplaySection'
+import Head from 'next/head'
 
 import { MdOutlineDocumentScanner, MdManageSearch, MdSpeed, MdAddLink } from "react-icons/md";
 
@@ -35,7 +35,20 @@ function SEOPage() {
 
   return (
     <div>
-        <PageBanner background="/assets/background/bbg.jpg" heading="SEO & Visibility" subHeading="Boost your visibility and climb the search engine rankings with our targeted SEO strategies."/>
+      <Head>
+          <title>SEO Services for Improved Ranking & Visibility | Star Contractor Agency</title>
+          <meta name="description" content="Boost your website's ranking and visibility with our expert SEO services. Our team specializes in optimizing websites for higher search engine rankings and attracting more organic traffic. Let us help you get noticed online and grow your business." />
+          <meta name="keywords" content="SEO services, search engine optimization, website ranking, visibility, organic traffic, SEO strategies, Toronto SEO, Greater Toronto Area, SEO agency" />
+          <meta name="author" content="Star Contractor Agency" />
+          <meta property="og:title" content="SEO Services for Improved Ranking & Visibility | Star Contractor Agency" />
+          <meta property="og:description" content="Boost your website's ranking and visibility with our expert SEO services. Our team specializes in optimizing websites for higher search engine rankings and attracting more organic traffic. Let us help you get noticed online and grow your business." />
+          <meta property="og:image" content="/og.jpg" />
+          <meta property="og:url" content="https://www.starcontractoragency.com/services/seo-optimization" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@StarContractorAgency" />
+      </Head>
+
+        <PageBanner background="/assets/background/bbg.jpg" heading="SEO & Visibility" subHeading="Boost your website's ranking and visibility with our expert SEO services. Our team specializes in optimizing websites for higher search engine rankings and attracting more organic traffic. Let us help you get noticed online and grow your business."/>
         <ContentRightImageLeft 
             image={"/assets/images/services/seo/main.jpg"} 
             title="SEO & Visibility"  
@@ -46,8 +59,8 @@ function SEOPage() {
               "White-Hat Techniques",
               "Local Focus"
           ]} 
-            link="https://www.example.com/"
-            linkText = "SEO Service"
+            link="/contact-us"
+            linkText = "Let's Grow Your Business"
             background = "gray"
         />
         <Process steps={steps}/>

@@ -12,7 +12,7 @@ function Process({steps}) {
           <h2 className="text-3xl lg:text-4xl font-medium text-black mb-0 lg:mb-6">Our Process</h2>
         </div>
 
-        <div className='hidden lg:grid grid-cols-2 md:grid-cols-4 gap-4 mt-12'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:mt-12 mt-8'>
           {steps.map((step, index) => (
             <ProcessCard key={index} index={index} {...step} />
           ))}

@@ -1,16 +1,27 @@
-import AboutUsDisplay from '@/components/new/about/layouts/AboutUsDisplay'
-import CTA from '@/components/new/banner/layouts/CTA'
-import Hero from '@/components/new/banner/layouts/Hero'
-import BlogFeatured from '@/components/new/blog/layouts/BlogFeatured'
-import ContentLeftImageRight from '@/components/new/general/layouts/ContentLeftImageRight'
-import ContentRightImageLeft from '@/components/new/general/layouts/ContentRightImageLeft'
-import PortfolioDisplaySection from '@/components/new/portfolio/layouts/PortfolioDisplaySection'
-import CardsRightDisplay from '@/components/new/services/layouts/CardsRightDisplay'
+import AboutUsDisplay from '@/components/about/layouts/AboutUsDisplay'
+import CTA from '@/components/banner/layouts/CTA'
+import Hero from '@/components/banner/layouts/Hero'
+import BlogFeatured from '@/components/blog/layouts/BlogFeatured'
+import PortfolioDisplaySection from '@/components/portfolio/layouts/PortfolioDisplaySection'
+import CardsRightDisplay from '@/components/services/layouts/CardsRightDisplay'
 import React from 'react'
+import Head from 'next/head';
 
 function index() {
   return (
     <div>
+        <Head>
+          <title>Websites & SEO Strategies For Service Businesses Toronto | Star Contractor Agency</title>
+          <meta name="description" content="Solving visibility and ranking concerns for service businesses in the Greater Toronto Area, with a personalized & effective approach to web design, SEO, branding, and digital media." />
+          <meta name="keywords" content="website design, SEO, digital marketing, brand design, online presence, Toronto, Canada, Ontario, GTA, Mississauga, SEO strategies, digital media agency" />
+          <meta name="author" content="Karim Jaouhar" />
+          <meta property="og:title" content="Websites & SEO Strategies For Service Businesses Toronto | Star Contractor Agency" />
+          <meta property="og:description" content="Solving visibility and ranking concerns for service businesses in the Greater Toronto Area, with a personalized & effective approach to web design, SEO, branding, and digital media." />
+          <meta property="og:image" content="/og.jpg" />
+          <meta property="og:url" content="https://www.starcontractoragency.com/" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@KarimJawhar02" />
+        </Head>
         <Hero />
         <AboutUsDisplay 
             image={"/assets/images/about/team.jpg"} 

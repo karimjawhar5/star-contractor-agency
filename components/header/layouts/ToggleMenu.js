@@ -17,7 +17,7 @@ function ToggleMenu() {
 
             <a href='/' className='py-4 px-8 text-slate-100 hover:text-orange-500'>Home</a>
             
-            <a href='/about' className='py-4 px-8 text-slate-100 hover:text-orange-500'>About Us</a>
+            <a href='/about' className='py-4 px-8 text-slate-100 border-t border-gray-600 hover:text-orange-500'>About Us</a>
 
             <div className=" text-slate-100 border-t border-gray-600">
                 

@@ -27,7 +27,7 @@ function CardsRightDisplay() {
             image: '/assets/images/services/brand-identity/thumbnail.jpg',
             title: 'Brand Idenity',
             text:'Make a memorable impression with our expert branding and graphic design services, covering logo design, business cards, and attention-grabbing visuals for your brand across all platforms.',
-            link:'/services/brand-idenity'
+            link:'/services/brand-identity'
           },
       ];
 
@@ -44,7 +44,7 @@ function CardsRightDisplay() {
                 </p>
                 
                 <div className='hidden lg:block'>
-                    <ButtonFilled text="Explore Services" link="/contact-us" icon={<MdArrowForward size={18} />}/>
+                    <ButtonFilled text="Explore Services" link="/services" icon={<MdArrowForward size={18} />}/>
                 </div>
                 
             </div>
@@ -56,7 +56,7 @@ function CardsRightDisplay() {
             </div>
 
             <div className='lg:hidden text-center'>
-                <ButtonFilled text="Get In Touch" link="/contact" icon={<MdArrowForward size={18} />}/>
+                <ButtonFilled text="Get In Touch" link="/services" icon={<MdArrowForward size={18} />}/>
             </div>
         </div>
         

@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from '@/components/new/banner/layouts/PageBanner'
-import ContentLeftImageRight from '@/components/new/general/layouts/ContentLeftImageRight'
-import ContentRightImageLeft from '@/components/new/general/layouts/ContentRightImageLeft'
-import Process from '@/components/new/general/layouts/Process'
-import CTA from '@/components/new/banner/layouts/CTA'
-import PortfolioDisplaySection from '@/components/new/portfolio/layouts/PortfolioDisplaySection'
+import PageBanner from '@/components/banner/layouts/PageBanner'
+import ContentRightImageLeft from '@/components/general/layouts/ContentRightImageLeft'
+import Process from '@/components/general/layouts/Process'
+import CTA from '@/components/banner/layouts/CTA'
+import PortfolioDisplaySection from '@/components/portfolio/layouts/PortfolioDisplaySection'
+import Head from 'next/head'
 
 import { MdImageSearch, MdDesignServices, MdVerifiedUser, MdOutlineDownloading } from "react-icons/md";
 
@@ -36,7 +36,20 @@ function BrandIdentityPage() {
 
   return (
     <div>
-        <PageBanner background="/assets/background/bbg.jpg" heading="Brand Idenitity & Graphic Design" subHeading="Make a memorable impression with our bespoke branding and graphic design services. Whether you're in need of a new logo, business cards, or marketing materials, our talented designers have you covered."/>
+      <Head>
+        <title>Professional Brand Identity Services | Star Contractor Agency</title>
+        <meta name="description" content="Establish a strong brand identity with our professional services. From logos and graphics to social media post templates, truck designs, and employee shirt designs, we help businesses stand out and make a lasting impression. Let us help you create a cohesive and memorable brand identity that resonates with your audience." />
+        <meta name="keywords" content="brand identity services, logos, graphics, social media templates, truck designs, employee shirt designs, branding, Toronto brand identity, Greater Toronto Area, branding agency" />
+        <meta name="author" content="Star Contractor Agency" />
+        <meta property="og:title" content="Professional Brand Identity Services | Star Contractor Agency" />
+        <meta property="og:description" content="Establish a strong brand identity with our professional services. From logos and graphics to social media post templates, truck designs, and employee shirt designs, we help businesses stand out and make a lasting impression. Let us help you create a cohesive and memorable brand identity that resonates with your audience." />
+        <meta property="og:image" content="/og.jpg" />
+        <meta property="og:url" content="https://www.starcontractoragency.com/services/brand-identity" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@StarContractorAgency" />
+      </Head>
+
+        <PageBanner background="/assets/background/bbg.jpg" heading="Brand Idenitity & Graphic Design" subHeading="Establish a strong brand identity with our professional services. From logos and graphics to social media post templates, truck designs, and employee shirt, and more. we help businesses stand out and make a lasting impression."/>
         <ContentRightImageLeft 
             image={"/assets/images/services/brand-identity/main.jpg"} 
             title="Branding & Graphic Design"  
@@ -47,16 +60,13 @@ function BrandIdentityPage() {
               "Attention to Detail",
               "Timeless Design"
           ]} 
-            link="https://www.example.com/"
-            linkText = "SEO Service"
+            link="/contact-us"
+            linkText = "Let's Work On Your Brand"
             background = "gray"
         />
         <Process steps={steps}/>
         <CTA />
         <PortfolioDisplaySection />
-        
-        
-      
     </div>
   )
 }

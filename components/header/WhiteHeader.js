@@ -54,7 +54,7 @@ function WhiteHeader() {
               
             </ul>
             <div className='hidden md:block'>
-              <ButtonOutline text="437 961 6674" link="tel:4379616674" icon={<MdLocalPhone size={18}/> } iconPos={false} animate={false}/>
+              <ButtonOutline text="(437) 961 6674" link="tel:4379616674" icon={<MdLocalPhone size={18}/> } iconPos={false} animate={false}/>
             </div>
 
             <button type="button" onClick={handleMenuToggle} className="h-10 px-2 md:px-4 text-gray-800 rounded-sm border lg:hidden">{menuToggled? <MdClose size={20} /> : <MdMenu size={20} />}</button>

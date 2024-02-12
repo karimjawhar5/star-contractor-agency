@@ -30,22 +30,22 @@ function PortfolioDisplayPage({background="white"}) {
             image: '/assets/portfolio/portfolio-2.png',
             title: 'SKAZ Garage Door Inc.',
             summary: 'A garage door supplier website aimed on showcasing the their garage door products to garage door installers.',
-            link: 'https://dyannemusic.com/',
-            linkText: 'www.daynnemusic.com'
+            link: 'https://skaz.ca/',
+            linkText: 'www.skaz.ca'
           },
           {
             image: '/assets/portfolio/portfolio.png',
             title: 'Moe Garage Door Tech',
             summary: 'A website focused on getting more calls for Moe Garage Door Tech, a garage door repair and service busines.',
-            link: 'https://dyannemusic.com/',
-            linkText: 'www.daynnemusic.com'
+            link: 'https://moegaragedoor.com/',
+            linkText: 'www.moegaragedoor.com'
           },
           {
             image: '/assets/portfolio/portfolio-5.png',
             title: 'N & Co. Event Designer',
             summary: 'An elegent website with the goal of showcasing the memerable events oragnized by N & Co. ',
-            link: 'https://dyannemusic.com/',
-            linkText: 'www.daynnemusic.com'
+            link: 'https://nandco.ca/',
+            linkText: 'www.nandco.ca'
           },
     ]
 
