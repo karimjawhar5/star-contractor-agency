@@ -4,6 +4,7 @@ import ContentRightImageLeft from '@/components/general/layouts/ContentRightImag
 import Process from '@/components/general/layouts/Process'
 import CTA from '@/components/banner/layouts/CTA'
 import PortfolioDisplaySection from '@/components/portfolio/layouts/PortfolioDisplaySection'
+import Head from 'next/head'
 
 import { MdOutlineDraw,MdOutlineCameraAlt,MdIosShare, MdOutlineChangeCircle  } from "react-icons/md";
 
