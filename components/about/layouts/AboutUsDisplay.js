@@ -11,7 +11,7 @@ function AboutUsDisplay({image, title, paragraph, list, link, linkText = "Learn 
       };
 
     return (
-        <section className={background == "gray" ? "py-20 lg:py-32 bg-gray-100 sidewaysSection": "py-20 lg:py-32 bg-white slantedSection"}>
+        <section className={background == "gray" ? "py-20 lg:py-32 bg-gray-100": "py-20 lg:py-32 bg-white"}>
     
     <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 items-center px-4 lg:px-6">
       
