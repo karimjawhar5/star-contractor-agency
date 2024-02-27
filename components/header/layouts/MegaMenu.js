@@ -1,5 +1,6 @@
 import React from 'react'
 import MegaMenuCard from '../elements/MegaMenuCard';
+import { motion } from 'framer-motion';
 
 function MegaMenu() {
   const cardsData = [
@@ -26,7 +27,11 @@ function MegaMenu() {
 ];
 
   return (
-    <div className="bg-white hidden lg:block border-t border-gray-300">
+    <motion.div 
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{duration: 0.3 }}
+    className="bg-white hidden lg:block border-t border-gray-300">
 
       <div className="container mx-auto px-4 py-16 max-w-screen-xl">
         
@@ -36,7 +41,7 @@ function MegaMenu() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

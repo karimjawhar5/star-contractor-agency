@@ -22,8 +22,9 @@ function OurWorkPage() {
       </Head>
       <PageBanner background="/assets/background/bbg.jpg" heading="Our Work" subHeading="Explore examples of our work and portfolio showcasing website design, branding, SEO, and digital media projects tailored for local businesses in the Greater Toronto Area. See how we've helped businesses enhance their online presence and drive growth."/>
         <PortfolioDisplayPage />
-        {/* <DigitalMediaDisplay /> */}
+        
         <CTA background="white"/>
+        <DigitalMediaDisplay />
     </div>
   )
 }

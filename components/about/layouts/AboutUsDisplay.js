@@ -60,8 +60,8 @@ function AboutUsDisplay({image, title, paragraph, list, link, linkText = "Learn 
         
       </div>
 
-      <div className="hidden lg:flex w-full lg:w-1/2 justify-end">
-        <img className='w-3/4' src={image} />
+      <div className="hidden lg:flex w-full lg:w-1/2 pl-8 justify-end">
+        <img className='w-full' src={image} />
       </div>
 
     </div>

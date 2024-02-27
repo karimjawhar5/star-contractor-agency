@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { MdLocalPhone, MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 import ButtonOutline from '../../general/elements/ButtonOutline';
@@ -11,7 +12,11 @@ function ToggleMenu() {
       setServicesToggled(!servicesToggled)
     }
   return (
-    <div className="lg:hidden flex-grow px-4 py-10 border-t border-gray-500 flex flex-col justify-between w-full">
+    <motion.div 
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{duration: 0.3 }}
+    className="lg:hidden flex-grow px-4 py-10 border-t border-gray-500 flex flex-col justify-between w-full">
         
         <nav className="w-full flex flex-col mx-auto text-lg justify-start">
 
@@ -47,7 +52,7 @@ function ToggleMenu() {
             <ButtonOutline text="(437) 961 6674" link="tel:4379616674" icon={<MdLocalPhone size={18}/>} iconPos={false}/>
         </div>
 
-    </div>
+    </motion.div>
   );
 }
 
