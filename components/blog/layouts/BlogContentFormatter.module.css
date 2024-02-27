@@ -1,32 +1,60 @@
 /* BlogContentFormatter.module.css */
 
 /* Base styles for headings */
+
+
+.container {
+  font-size: 1.1rem; /* Equivalent to base in Tailwind */
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 200; /* Equivalent to font-medium in Tailwind */
+  line-height: 180%;
+}
+
 .container h2 {
-  font-size: 2.25rem; /* Equivalent to 2xl in Tailwind */
+  font-size: 2rem; /* Equivalent to 2xl in Tailwind */
   color: #000; /* Black */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
-  padding-top: 1rem; /* Add padding to the top */
-  padding-bottom: 0.8rem; /* Add padding to the top */
+  padding-top:2rem; /* Add padding to the top */
+  padding-bottom: 2rem; /* Add padding to the top */
 }
 
 .container h3 {
-  font-size: 1.75rem; /* Equivalent to xl in Tailwind */
+  font-size: 1.50rem; /* Equivalent to xl in Tailwind */
   color: #000; /* Black */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
-  padding-top: 0.8rem; /* Add padding to the top */
-  padding-bottom: 0.4rem; /* Add padding to the top */
+  padding-top:1.5rem; /* Add padding to the top */
+  padding-bottom: 1.5rem; /* Add padding to the top */
 }
 
 .container h4 {
   font-size: 1.25rem; /* Equivalent to lg in Tailwind */
   color: #000; /* Black */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
-  padding-top: 0.6rem; /* Add padding to the top */
-  padding-bottom: 0.3rem; /* Add padding to the top */
+  padding-top:1rem; /* Add padding to the top */
+  padding-bottom: 1rem; /* Add padding to the top */
+}
+
+.container p {
+  color: #374151; /* Equivalent to text-gray-800 in Tailwind */
+  padding-bottom: 1rem;
+}
+
+.container li {
+  font-size: 1rem;
+  line-height: 150%;
+  line-height: 180%;
 }
 
 /* Responsive styles for smaller screens (phones) */
 @media screen and (max-width: 640px) {
+  .container {
+    font-size: 1rem; /* Equivalent to base in Tailwind */
+  }
+  .container li {
+    font-size: 0.8rem;
+  }
   .container h2 {
     font-size: 1.75rem; /* Equivalent to xl in Tailwind */
   }
@@ -40,29 +68,38 @@
   }
 }
 
-.container p {
-  font-size: 1rem; /* Equivalent to base in Tailwind */
-  color: #374151; /* Equivalent to text-gray-800 in Tailwind */
-  padding-bottom: 0.40rem;
-}
-
 .container img {
   width: 100%; /* Full width */
+  font-size: 1.2rem; /* Equivalent to base in Tailwind */
   border-radius: 0.25rem; /* Equivalent to rounded-sm in Tailwind */
   padding-bottom: 0.40rem;
 }
 
 .container ul {
-  font-size: 1rem; /* Equivalent to base in Tailwind */
   color: #374151; /* Equivalent to text-gray-800 in Tailwind */
   padding-bottom: 0.40rem;
+  list-style-type: disc; /* For ul */
+  padding-left: 1.5rem; /* Adjust as needed */
+  padding-top: 1rem;
+}
+
+.container ol {
+  color: #374151; /* Equivalent to text-gray-800 in Tailwind */
+  padding-bottom: 0.40rem;
+  list-style-type: decimal;
+  padding-left: 1.5rem; /* Adjust as needed */
+  padding-top: 1rem;
+}
+
+.container li {
+  padding-bottom: 1rem;
 }
 
 .container a {
-  color: #f87315; /* Set the text color to orange */
+  color: #e76609; /* Set the text color to orange */
   text-decoration: none; /* Remove default underline */
+  font-weight: 300;
   transition: text-decoration 0.2s ease; /* Smooth transition for underline */
-  font-size: 1rem; /* Same as p tags */
 }
 
 .container a:hover {

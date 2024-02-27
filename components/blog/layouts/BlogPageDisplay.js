@@ -26,7 +26,7 @@ function BlogPageDisplay() {
             <BlogCard
               key={index}
               image={blog.imageUrl}
-              date={blog.CreatedAt ? new Date(blog.CreatedAt.seconds * 1000).toLocaleDateString() : ''} // Convert Firebase timestamp to a readable date format
+              date={blog.date} // Convert Firebase timestamp to a readable date format
               title={blog.title}
               link={`/blog/${blog.slug}`} // You can modify the link according to your requirement
               summary={blog.summary}
