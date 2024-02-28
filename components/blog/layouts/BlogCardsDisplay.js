@@ -8,9 +8,10 @@ function BlogCardDisplay({ background = "white", titleOn=true }) {
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
-      const postsCollection = collection(db, 'blogPosts');
-      const postsSnapshot = await getDocs(postsCollection);
-      const postsData = postsSnapshot.docs.map(doc => doc.data());
+      const postsCollectionRef = collection(db, 'blogPosts');
+      const q = query(postsCollectionRef, limit(3)); // Limiting the query to 3 documents
+      const postsSnapshot = await getDocs(q);
+      const postsData = postsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setBlogPosts(postsData);
     };
 
@@ -33,7 +34,7 @@ function BlogCardDisplay({ background = "white", titleOn=true }) {
               title={blog.title}
               link={`/blog/${blog.slug}`} // You can modify the link according to your requirement
               summary={blog.summary}
-              author={blog.author}
+              author={blog.authorName}
               readTime={blog.readTime}
               category={blog.category}
             />

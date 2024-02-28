@@ -18,7 +18,7 @@ function BlogCard({ image, title, summary, link, author, date, category, readTim
         
         {summary ? <p className='text-gray-700 mt-2 hidden md:block'>{summary}</p>: <></>}
         
-        <span className=' text-sm text-gray-500 mt-3'>By <span className='font-medium text-orange-500'>{author} </span>| {date}</span>
+        <span className='font-light text-sm text-gray-500 mt-3'>By {author} | {date}</span>
       
       </div>
     </div>

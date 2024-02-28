@@ -24,27 +24,26 @@
   font-size: 1.50rem; /* Equivalent to xl in Tailwind */
   color: #000; /* Black */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
-  padding-top:1.5rem; /* Add padding to the top */
-  padding-bottom: 1.5rem; /* Add padding to the top */
+  padding-top:0.5rem; /* Add padding to the top */
+  padding-bottom: 0.5rem; /* Add padding to the top */
 }
 
 .container h4 {
   font-size: 1.25rem; /* Equivalent to lg in Tailwind */
   color: #000; /* Black */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
-  padding-top:1rem; /* Add padding to the top */
-  padding-bottom: 1rem; /* Add padding to the top */
+  padding-top:0.2rem; /* Add padding to the top */
+  padding-bottom: 0.2rem; /* Add padding to the top */
 }
 
 .container p {
   color: #374151; /* Equivalent to text-gray-800 in Tailwind */
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
 }
 
 .container li {
   font-size: 1rem;
-  line-height: 150%;
-  line-height: 180%;
+  line-height: 160%;
 }
 
 /* Responsive styles for smaller screens (phones) */
@@ -80,7 +79,7 @@
   padding-bottom: 0.40rem;
   list-style-type: disc; /* For ul */
   padding-left: 1.5rem; /* Adjust as needed */
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .container ol {
@@ -88,7 +87,7 @@
   padding-bottom: 0.40rem;
   list-style-type: decimal;
   padding-left: 1.5rem; /* Adjust as needed */
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .container li {

@@ -30,7 +30,7 @@ function BlogPageDisplay() {
               title={blog.title}
               link={`/blog/${blog.slug}`} // You can modify the link according to your requirement
               summary={blog.summary}
-              author={blog.author}
+              author={blog.authorName}
               readTime={blog.readTime}
               category={blog.category}
             />

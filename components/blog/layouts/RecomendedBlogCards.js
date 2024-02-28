@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { db } from "@/firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, query, getDocs, limit } from "firebase/firestore";
 import BlogCard from '../elements/BlogCard';
 
 function RecomendedBlogCards() {
@@ -8,14 +8,18 @@ function RecomendedBlogCards() {
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
-      const postsCollection = collection(db, 'blogPosts');
-      const postsSnapshot = await getDocs(postsCollection);
-      const postsData = postsSnapshot.docs.map(doc => doc.data());
+      // Create a query against the collection, limiting the result to 3
+      const postsQuery = query(collection(db, 'blogPosts'), limit(3));
+
+      // Execute the query
+      const querySnapshot = await getDocs(postsQuery);
+      const postsData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setBlogPosts(postsData);
     };
 
     fetchBlogPosts();
-  }, []);
+  }, []); // The empty dependency array ensures this effect runs once after the initial render
+
 
   return (
     <section className={"py-12 lg:py-20 bg-white-100"}>
@@ -33,8 +37,7 @@ function RecomendedBlogCards() {
               date={blog.date} // Convert Firebase timestamp to a readable date format
               title={blog.title}
               link={`/blog/${blog.slug}`} // You can modify the link according to your requirement
-              summary={blog.summary}
-              author={blog.author}
+              author={blog.authorName}
               readTime={blog.readTime}
               category={blog.category}
             />
