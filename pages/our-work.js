@@ -2,7 +2,6 @@ import React from 'react'
 import PageBanner from '@/components/banner/layouts/PageBanner'
 import PortfolioDisplayPage from '@/components/portfolio/layouts/PortfolioDisplayPage'
 import CTA from '@/components/banner/layouts/CTA'
-import DigitalMediaDisplay from '@/components/portfolio/layouts/DigitalMediaDisplay'
 import Head from 'next/head'
 
 function OurWorkPage() {
