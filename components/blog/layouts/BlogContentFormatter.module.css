@@ -52,7 +52,7 @@
     font-size: 1rem; /* Equivalent to base in Tailwind */
   }
   .container li {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .container h2 {
     font-size: 1.75rem; /* Equivalent to xl in Tailwind */
